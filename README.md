@@ -1,5 +1,7 @@
 # Chrome Entity Linker for Contextual Search and Linked Thinking
 
+The Project Presentation Video and Documentation are among the files in my repository.
+
 ## Motivation
 Often while browsing the web, we encounter an entity that we'd like to look up. This involves copy-pasting the word to a search engine and navigating to the article we want, which is often quite low on the search results because it is missing the specific context from the website we were browsing. We need to use the local context of the word/phrase as well as the context of the web page to perform entity linking. 
 

@@ -59,7 +59,7 @@ Run `code/gerbil.py`. Use a manual threshhold of -0.4.
 ```
 python -m gerbil.server --training_name=base_att_global  --experiment_name=paper_models  --persons_coreference_merge=True --all_spans_training=True --entity_extension=extension_entities --hardcoded_thr -0.4
 ```
-
+This will start an HTTP server at `http://127.0.0.1:5000/`
 ### Step 2
 Create a virtual environment and install the requirements for the back end.
 ```
@@ -70,6 +70,7 @@ Run a second HTTP server using the code in the `back_end` directory.
 cd back_end/ELApp
 python __init__.py
 ```
+This will start an HTTP server at `http://127.0.0.1:5667/`
 
 ### Step 3
 Go to chrome://extensions/ and load `ChromEntity/front_end` as a new extension.

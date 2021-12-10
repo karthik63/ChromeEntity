@@ -40,11 +40,11 @@ front_end/
 ├─ manifest.json
 ```
 
-##Instructions to run the extension
-###Step 1
+## Instructions to run the extension
+### Step 1
 Clone [end2end entity linking](https://github.com/dalab/end2end_neural_el) and follow the instructions to run a HTTP server using `code/server.py`
 
-###Step 2
+### Step 2
 Run 
 ```
 python ChromeEntity/back_end/__init__.py
@@ -52,6 +52,6 @@ python ChromeEntity/back_end/__init__.py
 To start a decond HTTP server
 
 
-###Step 3
+### Step 3
 Go to chrome://extensions/ and load `ChromEntity/front_end` as a new extension.
 

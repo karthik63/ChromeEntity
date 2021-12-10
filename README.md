@@ -16,28 +16,28 @@ My chrome extension performs the following functions
 <img src="https://user-images.githubusercontent.com/18640459/145547077-0f4ec194-4232-405a-9aa5-f26245a1eb10.png" width="400">\
 
 ## Directory Structure
-back_end/
-├─ ELApp/
-│  ├─ __init__.py
-├─ elapp.wsgi
-├─ html/
-├─ index.html
-front_end/
-├─ src/
-│  ├─ vis-network.min.js
-│  ├─ app.js
-│  ├─ background.html
-│  ├─ d3.v7.min.js
-│  ├─ handler.js
-│  ├─ new_folder/
-│  ├─ home.css
-│  ├─ package.json
-│  ├─ home.html
-│  ├─ home_handler.js
-│  ├─ jquery-3.6.0.min.js
-├─ images/
-│  ├─ icon.png
-├─ manifest.json
+back_end/ <br />
+├─ ELApp/ <br />
+│  ├─ __init__.py <br />
+├─ elapp.wsgi <br />
+├─ html/ <br />
+├─ index.html <br />
+front_end/ <br />
+├─ src/ <br />
+│  ├─ vis-network.min.js <br />
+│  ├─ app.js <br />
+│  ├─ background.html  <br />
+│  ├─ d3.v7.min.js  <br />
+│  ├─ handler.js <br />
+│  ├─ new_folder/ <br />
+│  ├─ home.css <br />
+│  ├─ package.json <br />
+│  ├─ home.html <br />
+│  ├─ home_handler.js <br />
+│  ├─ jquery-3.6.0.min.js <br />
+├─ images/ <br />
+│  ├─ icon.png <br />
+├─ manifest.json <br />
 
 ##Instructions to run the extension
 ###Step 1

@@ -50,7 +50,7 @@ cd ChromeEntity
 
 ### Step 1
 Clone [end2end entity linking](https://github.com/dalab/end2end_neural_el) and 
-Create a virtual environment and install the requirementss
+Create a virtual environment and install the requirements
 ```
 pip install -r requirements_nel.txt
 ```

@@ -19,21 +19,21 @@ My chrome extension performs the following functions
 ```
 back_end/
 ├─ ELApp/
-│  ├─ __init__.py
+│  ├─ __init__.py (contains the back-end logic)
 ├─ elapp.wsgi
 ├─ html/
 ├─ index.html
 front_end/
 ├─ src/
 │  ├─ vis-network.min.js
-│  ├─ app.js
+│  ├─ app.js (content script with a listener)
 │  ├─ background.html
 │  ├─ d3.v7.min.js
-│  ├─ handler.js
+│  ├─ handler.js (logic for adding context menu entry and handling click events)
 │  ├─ home.css
 │  ├─ package.json
 │  ├─ home.html
-│  ├─ home_handler.js
+│  ├─ home_handler.js (contains the bulk of the front-end logic)
 │  ├─ jquery-3.6.0.min.js
 ├─ images/
 │  ├─ icon.png

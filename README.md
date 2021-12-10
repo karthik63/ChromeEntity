@@ -41,17 +41,28 @@ front_end/
 ```
 
 ## Instructions to run the extension
+### Step 0
+Clone the directory
+```
+git clone https://github.com/karthik63/ChromeEntity
+cd ChromeEntity
+```
+
 ### Step 1
-Clone [end2end entity linking](https://github.com/dalab/end2end_neural_el) and follow the instructions to run a HTTP server using `code/server.py`
+Clone [end2end entity linking](https://github.com/dalab/end2end_neural_el) and follow the instructions to run a HTTP server using `code/server.py`. Use a manual threshhold of -0.4.
+
+```
+python -m gerbil.server --training_name=base_att_global  --experiment_name=paper_models  --persons_coreference_merge=True --all_spans_training=True --entity_extension=extension_entities --hardcoded_thr -0.4
+```
 
 ### Step 2
-Run 
+Run a second HTTP server using the code in the `back_end` directory.
 ```
-python ChromeEntity/back_end/__init__.py
+cd back_end/ELApp
+python __init__.py
 ```
-To start a decond HTTP server
-
 
 ### Step 3
 Go to chrome://extensions/ and load `ChromEntity/front_end` as a new extension.
 
+Once the extension has been loaded and the two servers are running, you are good to go! You can right click and link any entity on any webpage.

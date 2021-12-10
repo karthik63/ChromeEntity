@@ -49,13 +49,22 @@ cd ChromeEntity
 ```
 
 ### Step 1
-Clone [end2end entity linking](https://github.com/dalab/end2end_neural_el) and follow the instructions to run a HTTP server using `code/server.py`. Use a manual threshhold of -0.4.
+Clone [end2end entity linking](https://github.com/dalab/end2end_neural_el) and 
+Create a virtual environment and install the requirementss
+```
+pip install -r requirements_nel.txt
+```
 
+Run `code/gerbil.py`. Use a manual threshhold of -0.4.
 ```
 python -m gerbil.server --training_name=base_att_global  --experiment_name=paper_models  --persons_coreference_merge=True --all_spans_training=True --entity_extension=extension_entities --hardcoded_thr -0.4
 ```
 
 ### Step 2
+Create a virtual environment and install the requirements for the back end.
+```
+pip install -r requirements_back_end.txt
+```
 Run a second HTTP server using the code in the `back_end` directory.
 ```
 cd back_end/ELApp

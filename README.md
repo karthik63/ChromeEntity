@@ -24,7 +24,7 @@ All of my configuration files are in `tilse/bin/`
 
 To run and evaluate my settings 
 
-To run the baselines/IR enhancements, please edit line 61 of `bin/predict-timelines` to 
+To run the baselines/IE enhancements, please edit line 61 of `bin/predict-timelines` to 
 ```
 news_corpora[topic] = pickle.load(open(dumped_corpora_directrory + topic + ".corpus.obj", "rb"))
 ```
